@@ -14,14 +14,13 @@ public class CustomString extends SpecialString {
 		String scramble = "";
 		Random random = new Random();
 		ArrayList<Character> notUsed = new ArrayList<Character>();
-		for(int i = 0; i <= notUsed.size(); i++) {
+		for(int i = 0; i < s.length(); i++) {
 			notUsed.add(s.charAt(i));
 		}
 		while(notUsed.size() > 0) {
 			int place = random.nextInt(notUsed.size());
 			char c = notUsed.get(place);
 			notUsed.remove(place);
-			System.out.println("c " + c);
 			if(place % 2 == 0) {
 				c = Character.toLowerCase(c);
 			}
