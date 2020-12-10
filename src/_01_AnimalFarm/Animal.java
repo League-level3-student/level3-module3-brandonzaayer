@@ -2,56 +2,68 @@ package _01_AnimalFarm;
 
 abstract class Animal {
 	abstract void makeNoise();
+
 	public int numOfLegs() {
 		return -1;
 	}
-	public class cow extends Animal {
+}
 
-		@Override
-		void makeNoise() {
-			// TODO Auto-generated method stub
-			
-		}
-		public int numOfLegs() {
-			return 4;
-		}
-		
-		
-	}
-	public class pig extends Animal{
+class Cow extends Animal {
 
-		@Override
-		void makeNoise() {
-			// TODO Auto-generated method stub
-			
-		}
-		public int numOfLegs() {
-			return 4;
-		}
-		
+	@Override
+	void makeNoise() {
+		// TODO Auto-generated method stub
+		System.out.println("moo");
 	}
-	public class horse extends Animal{
 
-		@Override
-		void makeNoise() {
-			// TODO Auto-generated method stub
-			
-		}
-		public int numOfLegs() {
-			return 4;
-		}
-		
+	public int numOfLegs() {
+		System.out.println(4);
+		return 4;
 	}
-	public class chicken extends Animal{
 
-		@Override
-		void makeNoise() {
-			// TODO Auto-generated method stub
-			
-		}
-		public int numOfLegs() {
-			return 2;
-		}
-		
+}
+
+class Pig extends Animal {
+
+	@Override
+	void makeNoise() {
+		// TODO Auto-generated method stub
+		System.out.println("oink");
 	}
+
+	public int numOfLegs() {
+		System.out.println(4);
+		return 4;
+	}
+
+}
+
+class Horse extends Animal {
+
+	@Override
+	void makeNoise() {
+		// TODO Auto-generated method stub
+		System.out.println("neigh");
+	}
+
+	public int numOfLegs() {
+		System.out.println(4);
+		return 4;
+	}
+
+}
+
+class Chicken extends Animal {
+
+	@Override
+	void makeNoise() {
+		// TODO Auto-generated method stub
+		System.out.println("cluck");
+	}
+
+	public int numOfLegs() {
+		System.out.println(2);
+		return 2;
+	}
+
 }
