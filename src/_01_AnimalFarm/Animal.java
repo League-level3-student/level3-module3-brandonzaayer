@@ -2,8 +2,8 @@ package _01_AnimalFarm;
 
 abstract class Animal {
 	abstract void makeNoise();
-	public static void numOfLegs() {
-		
+	public int numOfLegs() {
+		return -1;
 	}
 	class cow extends Animal {
 
@@ -11,6 +11,9 @@ abstract class Animal {
 		void makeNoise() {
 			// TODO Auto-generated method stub
 			
+		}
+		public int numOfLegs() {
+			return 4;
 		}
 		
 		
@@ -22,6 +25,9 @@ abstract class Animal {
 			// TODO Auto-generated method stub
 			
 		}
+		public int numOfLegs() {
+			return 4;
+		}
 		
 	}
 	class horse extends Animal{
@@ -31,6 +37,9 @@ abstract class Animal {
 			// TODO Auto-generated method stub
 			
 		}
+		public int numOfLegs() {
+			return 4;
+		}
 		
 	}
 	class chicken extends Animal{
@@ -39,6 +48,9 @@ abstract class Animal {
 		void makeNoise() {
 			// TODO Auto-generated method stub
 			
+		}
+		public int numOfLegs() {
+			return 2;
 		}
 		
 	}

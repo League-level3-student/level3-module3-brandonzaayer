@@ -6,6 +6,8 @@ public class Farm {
 public static void main(String[] args) {
 	ArrayList<Animal> farm = new ArrayList<Animal>();
 	Animal cow = new Animal;
+	
 	farm.add(cow);
+	
 }
 }
