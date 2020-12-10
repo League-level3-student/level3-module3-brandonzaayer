@@ -5,7 +5,7 @@ abstract class Animal {
 	public int numOfLegs() {
 		return -1;
 	}
-	class cow extends Animal {
+	public class cow extends Animal {
 
 		@Override
 		void makeNoise() {
@@ -18,7 +18,7 @@ abstract class Animal {
 		
 		
 	}
-	class pig extends Animal{
+	public class pig extends Animal{
 
 		@Override
 		void makeNoise() {
@@ -30,7 +30,7 @@ abstract class Animal {
 		}
 		
 	}
-	class horse extends Animal{
+	public class horse extends Animal{
 
 		@Override
 		void makeNoise() {
@@ -42,7 +42,7 @@ abstract class Animal {
 		}
 		
 	}
-	class chicken extends Animal{
+	public class chicken extends Animal{
 
 		@Override
 		void makeNoise() {
